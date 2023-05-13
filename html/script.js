@@ -12,7 +12,7 @@ $(function(){
                 armour = 0;
             }
             var amountArmorElement = document.getElementById("amountArmor");
-            amountArmorElement.style.backgroundImage = "linear-gradient(0deg, rgba(65,65,195,1) "+armour +"%, rgba(28,20,18,1) "+armour +"%)";
+            amountArmorElement.style.backgroundImage = "linear-gradient(0deg, rgba(65,65,195,1) "+armour +"%, rgba(28,20,18,1) "+(armour-18) +"%)";
             amountArmorElement.innerText = armour +"%";
 
             var health = Math.round(event.data.health);
@@ -21,7 +21,7 @@ $(function(){
                 health = 0;
             }
             var amountHealthElement = document.getElementById("amountHealth");
-            amountHealthElement.style.backgroundImage = "linear-gradient(0deg, rgba(227,31,31,1) "+health+"%, rgba(28,20,18,1) "+health+"%)";
+            amountHealthElement.style.backgroundImage = "linear-gradient(0deg, rgba(227,31,31,1) "+health+"%, rgba(28,20,18,1) "+(health-18)+"%)";
             amountHealthElement.innerText = health+"%";
 
             var food = event.data.food;
