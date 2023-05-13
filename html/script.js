@@ -8,12 +8,12 @@ $(function(){
             selector.style = "opacity:1.0;"
 
             var armour = Math.round(event.data.armour);
-            if(armor <= 0){
-                armor = 0;
+            if(armour <= 0){
+                armour = 0;
             }
             var amountArmorElement = document.getElementById("amountArmor");
-            amountArmorElement.style.backgroundImage = "linear-gradient(0deg, rgba(227,31,31,1) "+armour+"%, rgba(28,20,18,1) "+armour+"%)";
-            amountArmorElement.innerText = armor+"%";
+            amountArmorElement.style.backgroundImage = "linear-gradient(0deg, rgba(65,65,195,1) "+armour +"%, rgba(28,20,18,1) "+armour +"%)";
+            amountArmorElement.innerText = armour +"%";
 
             var health = Math.round(event.data.health);
 
@@ -59,12 +59,13 @@ $(function(){
 
            
             var armour = Math.round(event.data.armour);
-            if(armor <= 0){
-                armor = 0;
+            if(armour <= 0){
+                armour = 0;
             }
+            
             var amountArmorElement = document.getElementById("amountArmor");
-            amountArmorElement.style.backgroundImage = "linear-gradient(0deg, rgba(227,31,31,1) "+armour+"%, rgba(28,20,18,1) "+armour+"%)";
-            amountArmorElement.innerText = armor+"%";
+            amountArmorElement.style.backgroundImage = "linear-gradient(0deg, rgba(65,65,195,1) "+armour +"%, rgba(28,20,18,1) "+armour +"%)";
+            amountArmorElement.innerText = armour +"%";
 
             var health = Math.round(event.data.health);
 
@@ -110,12 +111,13 @@ $(function(){
 
             
             var armour = Math.round(event.data.armour);
-            if(armor <= 0){
-                armor = 0;
+            if(armour <= 0){
+                armour = 0;
             }
+            
             var amountArmorElement = document.getElementById("amountArmor");
-            amountArmorElement.style.backgroundImage = "linear-gradient(0deg, rgba(227,31,31,1) "+armour+"%, rgba(28,20,18,1) "+armour+"%)";
-            amountArmorElement.innerText = armor+"%";
+            amountArmorElement.style.backgroundImage = "linear-gradient(0deg, rgba(65,65,195,1) "+armour +"%, rgba(28,20,18,1) "+armour +"%)";
+            amountArmorElement.innerText = armour +"%";
 
             var health = Math.round(event.data.health);
 
@@ -141,15 +143,6 @@ $(function(){
             
         }else{
 
-            var oxigeno = event.data.oxigeno;
-            $("#oxigeno-percent").html(Math.round(oxigeno) + "");
-            $("#oxigeno-level").css("width", oxigeno + "");
-
-            var selectorid = document.querySelector(".oxigeno")
-            selectorid.style = "opacity:1.0;"
-
-            var selector1 = document.querySelector(".oxigenoagua")
-            selector1.style = "opacity:0.0;"
         }
 
         if (event.data.isVIP == true ||event.data.EstaEnElAgua == 1 ) {
@@ -162,12 +155,13 @@ $(function(){
 
             
             var armour = Math.round(event.data.armour);
-            if(armor <= 0){
-                armor = 0;
+            if(armour <= 0){
+                armour = 0;
             }
+            
             var amountArmorElement = document.getElementById("amountArmor");
-            amountArmorElement.style.backgroundImage = "linear-gradient(0deg, rgba(227,31,31,1) "+armour+"%, rgba(28,20,18,1) "+armour+"%)";
-            amountArmorElement.innerText = armor+"%";
+            amountArmorElement.style.backgroundImage = "linear-gradient(0deg, rgba(65,65,195,1) "+armour +"%, rgba(28,20,18,1) "+armour +"%)";
+            amountArmorElement.innerText = armour +"%";
 
             var health = Math.round(event.data.health);
 
@@ -193,15 +187,6 @@ $(function(){
             
         }else{
 
-            var oxigeno = event.data.oxigeno;
-            $("#oxigeno-percent").html(Math.round(oxigeno) + "");
-            $("#oxigeno-level").css("width", oxigeno + "");
-
-            var selectorid = document.querySelector(".oxigeno")
-            selectorid.style = "opacity:1.0;"
-
-            var selector1 = document.querySelector(".oxigenoagua")
-            selector1.style = "opacity:0.0;"
         }
 
         if ( event.data.quitarhud == true ) {

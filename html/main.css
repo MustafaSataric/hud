@@ -7,7 +7,7 @@ html, body {
 }
 
 *{
-    font-size: 2vh;
+    font-size: 1.5vh !important;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -107,8 +107,8 @@ body {
 .menu{
     font-family: 'Exo', sans-serif;
     margin-top: 5px;
-    width: 6vw !important;
-    height: 3vh !important;
+    width: 5vw !important;
+    height: 2vh !important;
     background-color: rgba(0, 0, 0, 0.856);
     color: white;
     font-size: 10px;
@@ -137,8 +137,9 @@ body {
 .health, .armour,.food ,.thirst,.stress, .menu, .id{
     font-family: 'Exo', sans-serif;
     margin-top: 5px;
-    width: 7vw !important;
-    height: 3vh;
+    
+    width: 5vw !important;
+    height: 2vh !important;
     background-color: rgba(0, 0, 0, 0.856);
     color: white;
     font-size: 10px;
